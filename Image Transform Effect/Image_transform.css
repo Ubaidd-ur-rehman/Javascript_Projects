@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navigation{
+    display: flex;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.navigation ul {
+    margin-left: 35%;
+    
+}
+.navigation ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 0px 15px;
+    
+
+}
+.navigation ul li:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.logo{
+    width: 70px;
+    margin-left: 25px;  
+    border-radius: 50%;
+}
+.content{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    padding: 70px;
+    font-size: 25px;
+}
+.content .text{
+    width: 50%;
+}
+.content img{
+    margin-top: -50px;
+    margin-left: 25%;
+    width: 25%;
+}
+.content .text p{
+    font-size: 15px;
+}
+.content h1 span{
+    color: orangered;
+    padding: 25px;
+}
+.icons{
+    display: inline;
+    width: 25px;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+#Be{
+    font-size: 28px;
+    font-weight: 700;
+}
+#btn{
+    padding: 10px;
+    background-color: black;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 30%; 
+    color: white;
+}
+.hover_image {
+    margin-top: -23px;
+    margin-left: -100px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hover_image .girl {
+    width: 50%;
+    position: absolute;
+    animation: girlAnimation 2s infinite alternate; 
+    right: 0;
+}
+
+.hover_image #orange {
+    position: absolute;
+    width: 30%;
+    left: 30%;
+    cursor: pointer;
+    animation: orangeAnimation 2s infinite alternate; /* Adjust the duration as needed */
+    bottom: 0;
+}
+
+@keyframes girlAnimation {
+    to {
+        right: -25px;
+    }
+}
+
+@keyframes orangeAnimation {
+    to {
+        bottom: 20px;
+        left: 310px;
+    }
+}
+
+
+#day{
+    width: 35px;
+}

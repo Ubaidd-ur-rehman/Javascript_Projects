@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="Validation.css" />
+    <script src="https://kit.fontawesome.com/a963cf7fa3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="validaitonForm">
+        <div class="image">
+          <img src="/images/paper-plane.png" id="plane-image" alt="" />
+        </div>
+        <div class="input-field">
+          <form id="myForm" method="POST" action="submit">
+            <div class="username">
+              Full Name
+              <input type="text" class="name" onkeyup="validatename()" placeholder="Enter your name" />
+              <img class="check" src="/images/check-mark.png" alt="" />
+              <img class="unchecked" src="/images/crossed.png" alt="" />  
+              <span class="redname"></span>
+              <br />
+            </div>
+            <div class="phone_number">
+              Phone No
+              <input
+              onkeyup="validatepassword()" 
+                type="password"
+                class="phone"
+                placeholder="+92 0451 4535 0"
+              />
+              <img class="phonecheck" src="/images/check-mark.png" alt="check" />
+              <img class="phoneunchecked" src="/images/crossed.png" alt="unchecked" />
+              <span class="redphone"></span>
+              <br />
+            </div>  
+            <div class="email">
+              Email id ...<input
+                type="email"
+                class="Email"
+                placeholder="abc@gmail.com"
+                onkeyup="validateEmail()"
+              />
+              <img class="emailcheck" src="/images/check-mark.png" alt="" />
+              <img class="emailuncheck" src="/images/crossed.png" alt="unchecked" />
+
+              <span class="redemail"></span>
+
+              <br />
+            </div>
+            <label for="message"> Message</label>
+            <textarea class="redmessage" name="" id="message" cols="30" rows="5">
+              Enter your message </textarea>
+              <button onclick="showToast(SuccessMsg)" class="submit" id="Success">Submit</button>
+              <!-- toastBox -->
+              <div id="toastBox">
+    
+            </div>
+          
+              
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="Validation.js"></script>
+  </body>
+</html>

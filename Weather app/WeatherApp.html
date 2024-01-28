@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+</head>
+<body>
+    <div class="weatherContainer">
+        <div class="input_search">
+            <input type="text" placeholder="Enter your place" spellcheck="false">
+            <button><img src="Images/search.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Enter a valid place name</p>
+        </div>
+        <div class="weather" >
+            <img src="Images/rain.png" class="weather_icon_img" alt="">
+            <p class="weatherCondition">Smoke</p>
+            <h1 class="temperature">22°C</h1>
+            <h2 class="city">Lahore</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="Images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="Images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="WeatherApp.js"></script>
+</body>
+</html>

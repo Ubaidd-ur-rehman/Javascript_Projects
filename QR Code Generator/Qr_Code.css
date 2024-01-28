@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(47, 47, 47);
+}
+.QR-field{
+    border-radius: 5px;
+    width: 28%;
+    height: 40%;
+    background-color: white;
+    padding: 15px;
+}
+.QR-field h3{
+   color: gray;
+
+}
+.QR-field #QR-input{
+    margin-top: 15px;
+    height: 38px;
+    width: 100%;
+    outline: none;
+}
+.QR-field #QR-btn{
+    padding: 9px;
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(43, 76, 226);
+
+}
+.QR-code{
+    width: 165px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.QR-code img{
+    width: 100%;
+    padding: 10px;
+
+    
+}
+.QR-code.show-img{
+    max-height: 250px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+    /* border: none; */
+  
+}
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}

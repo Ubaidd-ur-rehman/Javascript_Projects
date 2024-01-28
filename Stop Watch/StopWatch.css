@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/clock-2015460.jpg');
+   
+}
+.StopContainer{
+    border-radius: 100%;
+    margin-top: -25px;
+    margin-left: 15px;
+    width: 35%;
+    border: 10px solid rgb(255, 255, 255);
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/ai-generated-7466426.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
+    color: white;
+}
+.btn_container{
+    font-size: 35px;
+    display: flex;
+    position: absolute;
+    margin-top: 120px;
+    cursor: pointer;
+    margin-left: -35px;
+
+}
+.btn_container i{
+    margin-left:40px;
+    border-radius: 100%;
+    color:whitesmoke;
+}
+.Time{
+    margin-top: -35px;
+    display: block;
+}

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(2, 24, 78);
+}
+.validaitonForm {
+  width: 32%;
+  background-color: white;
+  padding: 20px;
+  height: 70%;
+  color: rgb(70, 70, 70);
+  border-radius: 2%;
+}
+.validaitonForm input {
+  width: 60%;
+  display: inline;
+  border: none; 
+  outline: none;
+  margin: 15px;
+  border-bottom: 1px solid gray;
+}
+.submit {
+  padding: 8px;
+  width: 40%;
+  margin: 8%;
+  outline: none;
+  margin-left: 90px;
+  cursor: pointer;
+  background-color: rgb(2, 24, 78);
+  color: white;
+}
+.image {
+  position: absolute;
+  width: 4.5%;
+  background-color: white;
+  border-radius: 50%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -45px;
+  margin-left: 140px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.image #plane-image {
+  width: 25px;
+}
+.input-field {
+  padding: 25px 0px;
+}
+
+#message {
+  width: 200px;
+  outline: none;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(94, 94, 94);
+  border-bottom: 1px solid gray;
+  margin-left: 15px;
+}
+.check{
+  display: none;  
+  width: 20px; 
+  position: absolute; 
+  margin-top: -40px;
+  margin-left: 23.5%;
+
+}
+.unchecked{
+  display: none;  
+  width: 20px; 
+  position: absolute; 
+  margin-top: -40px;
+  margin-left: 23.5%;
+  
+}
+
+.input-field .redname{
+  color: red;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 13%;
+  font-size: 15px;
+  font-weight: 600; 
+  display: none;
+}
+.redphone{
+  color: red;
+  position: absolute;
+  margin-left: -13%;
+  font-size: 15px;
+  margin-top: 8px;
+  font-weight: 600; 
+  /* display: none; */
+}
+.redemail{
+  color: red;
+  position: absolute;
+  margin-left: -13%;
+  font-size: 15px;
+  margin-top: 8px;
+  font-weight: 600; 
+}
+.phonecheck{
+  display: none;  
+  width: 20px; 
+  position: absolute; 
+  margin-top: -40px;
+  margin-left: 23.5%;
+}
+.phoneunchecked{
+  display: none;  
+  width: 20px; 
+  position: absolute; 
+  margin-top: -40px;
+  margin-left: 23.5%;
+}
+.emailcheck{
+  display: none;  
+  width: 20px; 
+  position: absolute; 
+  margin-top: -40px;
+  margin-left: 23.5%;
+}
+.emailuncheck{
+  display: none;  
+  width: 20px; 
+  position: absolute; 
+  margin-top: -40px;
+  margin-left: 23.5%;
+}
+
+
+/* toast */
+#toastBox {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+.toast{
+  width: 310px;
+  height: 55px;
+  background: #fff;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.2s linear forwards;
+}
+@keyframes moveleft {
+  100%{
+    transform: translateX(0%);
+  }
+}
+.toast i{
+  margin: 0 20px;
+  font-size: 25px;
+  color: green;
+}
+
+.toast::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+  animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+  100%{
+    width: 0;
+  }
+}
+

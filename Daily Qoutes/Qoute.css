@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444444;
+  height: 100vh; 
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  width: 50%;
+  max-width: 700px; /* Set a maximum width for better responsiveness */
+  height: auto;
+  min-height: 300px; /* Set a minimum height */
+  overflow-y: auto; /* Add a vertical scrollbar if content exceeds the height */
+  background-color: #ffffff; /* White */
+  padding: 20px;
+  animation: shadowAnimation 2s infinite alternate;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333; /* Dark Gray */
+}
+
+.content {
+  padding: 15px;
+  font-size: 16px;
+  color: #444444; /* Slightly Darker Gray */
+}
+
+.author {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888888; /* Light Gray */
+  position: relative;
+}
+
+.qouteline::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #79a9dc; 
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nqoute,
+.tweet {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 23%;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.Nqoute {
+  display: flex;
+  border: 2px solid #8a2be2;
+  justify-content: center;
+  background-color: #8a2be2; /* Blue Violet */
+  color: #ffffff; /* White */
+  margin-right: 10px;
+}
+.Nqoute:hover{
+  background:rgba(124, 0, 136, 0.8) ;
+}
+.tweet {
+  background-color: #ffffff; /* White */
+  color: #333333; /* Dark Gray */
+  border: 2px solid #8a2be2; /* Blue Violet */
+}
+.tweet:hover{
+  background: rgb(0, 0, 0,0.1);
+}
+.tweet i{
+  color: #1DA1F2;
+  margin-right: 5px;
+  font-size: 17px;
+}
+.container h1::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: #1DA1F2; 
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}

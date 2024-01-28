@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(135deg,#cf9aff,#95c0ff);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.container{
+margin: 50px;
+}
+.noteheading{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.noteheading h3{
+    margin-top: 5px;
+    font-size: 24px;
+}
+.noteheading img{
+    width: 50px;
+    height: 45px;
+}
+
+.notbtn button img{
+    width: 20px;
+    margin-left: -12px;
+    height: 15px;
+    margin-right: 5px;
+}
+.notbtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+     width: 13%;
+     color: white;
+     margin-top: 20px;
+     font-size: 13px;
+    outline: none;
+    height: 35px;
+    border-radius: 45px;
+    border: none;
+    background:linear-gradient(#9418fd,#571094);
+}
+/* General styling for the container */
+.input-field {
+    margin-top: 35px;
+    position: relative;
+}
+.input-box{
+    margin-top: 15px;
+    position: relative;
+    border-radius: 5px;
+
+}
+/* Styling for the input field */
+.input-field p {
+    /* display: none; */
+    width: 50%; /* Adjusted for better responsiveness */
+    height: 150px; /* Adjusted for a more standard input height */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 1px solid #ccc; /* Add a border for a cleaner look */
+    
+}
+.input-field img {
+    position: absolute;
+    width: 23px;
+    bottom: 10px;
+    left: 450px;
+    cursor: pointer;
+}
+
+/* Styling for the delete icon */
+.notbtn button:hover{
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+/* Optional: Add some transition for a smoother effect */
+.input-field img:hover {
+    transform: scale(1.2); /* Adjust the scale factor for the desired zoom effect */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
